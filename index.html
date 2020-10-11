@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Najlepszy snake</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="app.js" defer></script>
+</head>
+<body>
+	<main>
+		<div style="display: flex">
+			<div class="tableDiv">
+				<table cellspacing="0px;" id="snake"><tr><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th></tr><tr><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th></tr><tr><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th></tr><tr><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th></tr><tr><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th></tr><tr><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th></tr><tr><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th></tr><tr><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th></tr><tr><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th></tr><tr><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th></tr><tr><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th></tr></table>
+			</div>
+			<div class="tableDiv scoreDiv">
+				<table id="actualScore">
+					<tr>	
+						<th>Aktualny wynik: </th>
+					</tr>
+					<tr>
+						<th>gracz 1: <span id="score1"></span></th>
+					</tr>
+					<tr>
+						<th>gracz 2: <span id="score2"></span></th>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<div>Aktualna prędkość sneaka to: <span id="intervalHTML"></span></div>
+		<br>
+		<form name="f1">
+		    <input name="b1" type="number" placeholder="prędkość węsza">
+		</form>
+		<button onclick="intervalF()">Zmień prędkość węża</button>
+		<br>
+		<div>Ile graczy ma grać max 4 <span id="intervalHTML"></span></div>
+		<form name="f2">
+		    <input name="b2" type="number" placeholder="liczba graczy">
+		</form>
+		<button onclick="gracze()">Zmień liczbe graczy</button>
+
+
+	</main>
+</body>	
+</html>
